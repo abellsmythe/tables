@@ -1,0 +1,57 @@
+/*
+* Tables v0.1.0
+* Copyright 2018, Alton Bell Smythe
+* www.abellsmythe.github.io/tables
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table th, 
+table td {
+	padding: 10px 10px 9px;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: left;
+}
+
+table td {
+	vertical-align: top;
+	border-top: solid 1px #DDD;
+}
+
+table th {
+	padding-top: 9px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+table.condensed th, 
+table.condensed td {
+	padding: 5px 5px 4px;
+}
+
+table.bordered {
+	border-collapse: separate;
+	border: solid 1px #DDD;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+table.bordered th + th,
+table.bordered th + td,
+table.bordered td + td {
+	border-left: solid 1px #DDD;
+}
+
+.striped tbody tr:nth-child(odd) td,
+.striped tbody tr:nth-child(odd) th {
+	background: #F5F5F5;
+}
+
