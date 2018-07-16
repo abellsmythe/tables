@@ -6,158 +6,349 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tables</title>
     <link href="https://fonts.googleapis.com/css?family=Gaegu|Raleway:400,700,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.rawgit.com/abellsmythe/flexbox/e002421b/src/flexbox.css">
     <link rel="stylesheet" href="tables.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <section class="container">
+    <section class="container wrapper">
 
-        <!-- Default Styles -->
-        <div class="example">
-            <h3>Example: Default table styles</h3>
-            <p>By default tables are styled with inner horizontal borders. Table headings and data are set at 13px. No additional classes necessary.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Language</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Some</td>
-                        <td>One</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Joe</td>
-                        <td>Sixpack</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Stu</td>
-                        <td>Dent</td>
-                        <td>Code</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Condensed Styles -->
-        <div class="example">
-                <h3>Example: Condensed table</h3>
-                <p>For large tables where tight spacing is required.<br />Usage: <code>&lt;table class="condensed"&gt; ... &lt;/table&gt;</code></p>
-            <table class="condensed">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Language</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Some</td>
-                        <td>One</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Joe</td>
-                        <td>Sixpack</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Stu</td>
-                        <td>Dent</td>
-                        <td>Code</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Bordered Styles -->
-        <div class="example">
-            <h3>Example: Bordered table</h3>
-            <p>Inner and outer borders. May be combined with <code>condensed</code> class.<br />Usage: <code>&lt;table class="bordered"&gt; ... &lt;/table&gt;</code></p>
-            <table class="bordered">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Language</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Some</td>
-                        <td>One</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Joe</td>
-                        <td>Sixpack</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Stu</td>
-                        <td>Dent</td>
-                        <td>Code</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Striped Styles -->
-        <div class="example">
-            <h3>Example: Striped</h3>
-            <p>Alternating row color style. May be combined with <code>condensed</code> and/or <code>bordered</code> classes.<br />Usage: <code>&lt;table class="striped"&gt; ... &lt;/table&gt;</code></p>
-            <table class="striped">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Language</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Some</td>
-                        <td>One</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Joe</td>
-                        <td>Sixpack</td>
-                        <td>English</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Stu</td>
-                        <td>Dent</td>
-                        <td>Code</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="row middle-xs">
+            <div class="col center-xs">
+                <h1 class="title">Tables</h1>
+                <p>Beautiful Table responsive styles</p>
+                <div>
+                    <a class="btn" href="tables.css" download="tables.css">Download</a>
+                    <a class="btn" href="https://github.com/abellsmythe/tables" target="_blank">Github</a>
+                </div>
+            </div>
         </div>
     
     </section>
+
+    <!-- Default Styles -->
+    <section class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Default table style</h2>
+                <p>By default tables are styled with inner horizontal borders. Table headings and data are set at 13px. No additional classes necessary.</p>
+            </div>
+        </div>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Some</td>
+                    <td>One</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Joe</td>
+                    <td>Sixpack</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Stu</td>
+                    <td>Dent</td>
+                    <td>Code</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <pre>
+            <code>
+                &lt;table&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;#&lt;/th&gt;
+                            &lt;th&gt;First Name&lt;/th&gt;
+                            &lt;th&gt;Last Name&lt;/th&gt;
+                            &lt;th&gt;Language&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Some&lt;/td&gt;
+                            &lt;td&gt;One&lt;/td&gt;
+                            &lt;td&gt;English&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Joe&lt;/td&gt;
+                            &lt;td&gt;Sixpack&lt;/td&gt;
+                            &lt;td&gt;English&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Stu&lt;/td&gt;
+                            &lt;td&gt;Dent&lt;/td&gt;
+                            &lt;td&gt;Code&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            </code>
+        </pre>
+        
+    </section>
+
+    <!-- Condensed Styles -->
+    <section class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Condensed table style</h2>
+                <p>For large tables where tight spacing is required. Just add the class <code>condensed</code></p>
+            </div>
+        </div>
+    
+        <table class="condensed">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Some</td>
+                    <td>One</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Joe</td>
+                    <td>Sixpack</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Stu</td>
+                    <td>Dent</td>
+                    <td>Code</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <pre>
+            <code>
+                &lt;table class="condensed"&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;#&lt;/th&gt;
+                            &lt;th&gt;First Name&lt;/th&gt;
+                            &lt;th&gt;Last Name&lt;/th&gt;
+                            &lt;th&gt;Language&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Some&lt;/td&gt;
+                            &lt;td&gt;One&lt;/td&gt;
+                            &lt;td&gt;English&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Joe&lt;/td&gt;
+                            &lt;td&gt;Sixpack&lt;/td&gt;
+                            &lt;td&gt;English&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Stu&lt;/td&gt;
+                            &lt;td&gt;Dent&lt;/td&gt;
+                            &lt;td&gt;Code&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            </code>
+        </pre>
+        
+    </section>
+
+    <!-- Bordered Styles -->
+    <section class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Bordered table style</h2>
+                <p>Inner and outer borders. May be combined with <code>condensed</code> class. Just add the class <code>bordered</code></p>
+            </div>
+        </div>
+    
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Some</td>
+                    <td>One</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Joe</td>
+                    <td>Sixpack</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Stu</td>
+                    <td>Dent</td>
+                    <td>Code</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <pre>
+            <code>
+                &lt;table class="bordered"&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;#&lt;/th&gt;
+                            &lt;th&gt;First Name&lt;/th&gt;
+                            &lt;th&gt;Last Name&lt;/th&gt;
+                            &lt;th&gt;Language&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Some&lt;/td&gt;
+                            &lt;td&gt;One&lt;/td&gt;
+                            &lt;td&gt;English&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Joe&lt;/td&gt;
+                            &lt;td&gt;Sixpack&lt;/td&gt;
+                            &lt;td&gt;English&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Stu&lt;/td&gt;
+                            &lt;td&gt;Dent&lt;/td&gt;
+                            &lt;td&gt;Code&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            </code>
+        </pre>
+        
+    </section>
+
+    <!-- Striped Styles -->
+    <section class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Striped table style</h2>
+                <p>Alternating row color style. May be combined with <code>condensed</code> and/or <code>bordered</code> classes. Just add the class <code>striped</code></p>
+            </div>
+        </div>
+    
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Some</td>
+                    <td>One</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Joe</td>
+                    <td>Sixpack</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Stu</td>
+                    <td>Dent</td>
+                    <td>Code</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <pre>
+            <code>
+                &lt;table class="striped"&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;#&lt;/th&gt;
+                            &lt;th&gt;First Name&lt;/th&gt;
+                            &lt;th&gt;Last Name&lt;/th&gt;
+                            &lt;th&gt;Language&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;Some&lt;/td&gt;
+                            &lt;td&gt;One&lt;/td&gt;
+                            &lt;td&gt;English&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;Joe&lt;/td&gt;
+                            &lt;td&gt;Sixpack&lt;/td&gt;
+                            &lt;td&gt;English&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                            &lt;td&gt;Stu&lt;/td&gt;
+                            &lt;td&gt;Dent&lt;/td&gt;
+                            &lt;td&gt;Code&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            </code>
+        </pre>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+
+        <div class="row">
+            <div class="col end-xs">
+                <a class="copyright" href="https://abellsmythe.me">abellsmythe</a>
+            </div>
+        </div>
+        
+    </footer>
 
 </body>
 </html>

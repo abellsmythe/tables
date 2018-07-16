@@ -83,31 +83,9 @@ a.copyright {
     min-width: 100vw;
 }
 
-.row-colored {
-    margin: 5px;
-    padding: 5px;
-    background: var(--secondary-color, #0044BA);
-}
-
 .col {
     padding: 0.5rem inherit;
 }
-
-.box {
-    padding: 15px;
-    background: var(--primary-color, #007FFF);
-    color: #FFF;
-    text-align: center;
-}
-
-.box.box-high {
-    padding: 60px 15px;
-}
-
-.box.high-color {
-    background: var(--secondary-color, #0044BA);
-}
-
 
 pre {
     overflow-x: auto;
@@ -124,9 +102,10 @@ pre {
 
 code {
     color: var(--primary-color, #007FFF);
-}
-
-code {
     font-family: monospace,serif;
     font-size: 1em;
+}
+
+table {
+    background: #FCFCFC;
 }
