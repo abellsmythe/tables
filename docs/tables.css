@@ -6,6 +6,10 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
+* {
+	box-sizing: border-box;
+}
+
 table {
 	width: 100%;
 	border-collapse: collapse;
