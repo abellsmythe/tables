@@ -1,0 +1,26 @@
+{
+  "name": "tables",
+  "version": "0.1.0",
+  "description": "Beautiful Table responsive styles",
+  "style": "src/tables.css",
+  "main": "src/tables.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/abellsmythe/tables.git"
+  },
+  "keywords": [
+    "tables",
+    "html",
+    "css",
+    "responseive"
+  ],
+  "author": "@abellsmythe",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/abellsmythe/tables/issues"
+  },
+  "homepage": "https://github.com/abellsmythe/tables"
+}
