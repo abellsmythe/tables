@@ -1,5 +1,6 @@
 # Tables
 Beautiful Table responsive styles
+docs https://abellsmythe.me/tables/
 
 ### Default Table Style
 
